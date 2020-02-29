@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    
+</head>
+<body>
+  
+  <div class="promo">
+    <div class="container">
+      <header class="header">
+        
+        <div class="lang">
+          <div class="lang__name">Руcский</div> 
+            <div class="lang__check">
+              <img src="icons/arrowlang.svg" alt="language"> 
+            </div>
+            <div class="lang__submenu">
+            <div class="lang__close">
+              <img src="icons/cancel.png" alt="cancel">
+            </div>
+          </div>     
+        </div>
+        
+        <div class="header__nav">
+          <a href="#" class="header__logo">
+            <img src="icons/logo.png" alt="logo">
+          </a>
+          <nav class="header__menu">
+              <a href="#" class="header__link">Главная</a>
+              <a href="#" class="header__link">О нас</a>
+              <a href="#" class="header__link">Услуги</a>
+              <a href="#" class="header__link">Портфолио</a>
+              <a href="#" class="header__link">Цены</a>
+              <a href="#" class="header__link">Вакансии</a>
+              <a href="#" class="header__link">Контакты</a>
+          </nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__socials">
+            <a href="#" class="header__social">
+              <span class="icon-telegram"></span>
+            </a>
+            <a href="#" class="header__social">
+              <span class="icon-viber"></span>
+            </a>
+            <a href="#" class="header__social">
+              <span class="icon-instagram-brands"></span>
+            </a>
+            <a href="#" class="header__social">
+              <span class="icon-whatsapp"></span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- /.header -->
+      
+      <div class="promo__header">
+        <h1 class="promo__title">Большой яркий
+          заголовок для сайта</h1>
+        <button class="button promo__button">Попап</button>
+      </div>
+    </div>
+  </div>
+  <!-- /.promo -->
+
+  <section class="about">
+    <div class="company-info">
+      <div class="company-info__title">О нашей  компании</div>
+      <div class="company-info__discr">
+        <h2 class="company-info__subtitle">Небольшой
+          подзаголовок
+          о компании</h2>
+        <div class="company-info__info">
+          <div class="company-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
+          <hr class="company-info__line">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advantages">
+    <div class="container">
+      <div class="advantages__items">
+
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <img src="icons/item1.png" alt="Официально">
+          </div>
+          <div class="advantages__discr">Работаем официально</div>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <img src="icons/item2.png" alt="пунктуальность">
+          </div>
+          <div class="advantages__discr">пунктуальность</div>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <img src="icons/item3.png" alt="надежность">
+          </div>
+          <div class="advantages__discr">надежность</div>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <img src="icons/item4.png" alt="чистый код">
+          </div>
+          <div class="advantages__discr">чистый код</div>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <img src="icons/item5.png" alt="скорость">
+          </div>
+          <div class="advantages__discr">высокая скорость работы</div>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__icon">
+            <img src="icons/item6.png" alt="эффективность работы">
+          </div>
+          <div class="advantages__discr">эффективность работы</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="overlay">
+    <div class="modal" id="consultation">
+      <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
+      <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+      <form class="feed-form" action="#">
+        <input name="name" required placeholder="Ваше имя" type="text">
+        <input type="tel" id="phone" name="phone"
+        pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+        required>
+        <input name="email" required placeholder="Ваш E-mail" type="email">
+        <div class="modal__social">
+            <label class="modal__checkbox" for="whatsapp">
+                <input id="whatsapp" type="checkbox">
+                <img src="icons/whatsapp.svg" alt="whatsapp">
+                Whatsapp
+            </label>
+            <label class="modal__checkbox" for="viber">
+                <input id="viber" type="checkbox">
+                <img src="icons/viberr.svg" alt="viber">
+                Viber
+            </label>
+            <label class="modal__checkbox" for="telegram">
+              <input id="telegram" type="checkbox">
+              <img src="icons/telegramm.svg" alt="telegram">
+              Telegram
+          </label>
+        </div>
+        <button class="button button-form">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+      </form>
+      <div class="modal__close">&times;</div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/script.js"></script>
+</body>
+
+   
+</html>
